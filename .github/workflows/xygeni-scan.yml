@@ -28,5 +28,5 @@ jobs:
           token: ${{ secrets.XYGENI_TOKEN }}
           gh_token: ${{ secrets.PAT_FOR_XYGENI_SCAN }}
           command: >-
-            scan -n ${{ github.repository }} -d ${{ github.repository }}
+            scan -n ${{ github.repository }} -r ${{ github.repository }}
               --sbom sbom.json --sbom-format cyclonedx
